@@ -1,0 +1,22 @@
+<!DOCTYPE hmtl>
+
+<hmtl>
+	<head>
+		<meta charset='utf-8'>
+
+	</head>
+<body>
+	
+		<h1>Bem-Vindos a Arena Planetária!!!</h1>
+		
+		<h3>Planetas cadastrados:</h3>
+		
+		<tr th:each=" planeta : ${planetas}">
+			<span th:text="${planeta.nome}"></span>
+			<span th:text="${planeta.gravidade}"></span>
+			<p></p>
+				
+		</tr>
+			
+	<body>
+</hmtl>

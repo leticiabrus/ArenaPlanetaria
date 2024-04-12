@@ -1,0 +1,49 @@
+<!DOCTYPE hmtl>
+
+<hmtl>
+	<head>
+		<meta charset='utf-8'>
+		<title>Arena Planetario</title>
+<meta name= 'viewport' content='width=device-width'
+</head>
+<body>
+	
+		<h1>Cadastro de planeta!!!</h1>
+		
+		<form action="#"
+		method="post"
+		th:action="@{/cadastro}"
+		th:object="${planeta}">
+		
+		<input placeholder="'Nome do Planeta"
+		Id="nome"
+		th:field ="*{nome}" />
+		
+		<br>
+		<br>
+		<input placeholder="Gravidade;"
+		Id="Gravidade"
+		th:field ="*{Gravidade}" />
+		
+		<br>
+		<br>
+		<input placeholder="Gravidade"
+		Id="Gravidade"
+		th:field ="*{Gravidade}" />
+		
+		<br>
+		<br>
+		<input placeholder="'Massa do Planeta"
+		Id="Massa"
+		th:field ="*{Massa}" />
+		<br>
+		<br>
+		<input type="submit" value="salvar"/>
+		</form>
+		
+		<br>
+		<br>
+		
+			
+	<body>
+</hmtl>
